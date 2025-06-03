@@ -1,0 +1,377 @@
+﻿.hero-section {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url(../images/INVENTO.jpg) center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.hero-content.content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Burbujas */
+.bubble-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  animation: rise 10s infinite ease-in;
+  opacity: 0.7;
+}
+
+.bubble:nth-child(1) {
+  left: 20%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 5s;
+}
+
+.bubble:nth-child(2) {
+  left: 50%;
+  animation-duration: 5s;
+}
+
+.bubble:nth-child(3) {
+  left: 70%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 15s;
+}
+
+.bubble:nth-child(4) {
+  left: 90%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 5s;
+}
+.bubble:nth-child(5) {
+  left: 90%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 5s;
+}
+.bubble:nth-child(6) {
+  left: 90%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 5s;
+}
+.bubble:nth-child(7) {
+  left: 90%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 5s;
+}
+.bubble:nth-child(8) {
+  left: 90%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 5s;
+}
+.bubble:nth-child(9) {
+  left: 90%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 5s;
+}
+.bubble:nth-child(10) {
+  left: 90%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 5s;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+
+.hero-title {
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.hero-subtitle {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #f8f9fa;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #1e7e34;
+}
+
+/* NOSOTROS */
+/* Estilos para la sección "Sobre Nosotros" */
+
+/* ----- Estilos generales ----- */
+/* General */
+.section {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Títulos */
+.text-primary {
+  color: #0099cc !important; /* Un azul fresco y limpio */
+}
+
+.titulo-principal {
+  font-weight: 700;
+  font-size: 48px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.titulo-pequeno {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  color: #1d2d7c
+}
+
+/* Subtítulos y parrafos */
+.subtitulo-about {
+  font-size: 28px;
+  color: #006699;
+  font-weight: 700;
+}
+
+.parrafo-about {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  text-align: justify;
+
+}
+
+/* Iconos de la visión */
+.texto-secundario {
+  font-size: 16px;
+  color: gold;
+}
+
+/* Botones */
+.boton-learn-more {
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton-learn-more:hover {
+  background-color: #0077aa;
+  transform: translateY(-2px);
+}
+
+/* Imagen 
+.contenedor-imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-about {
+  border-radius: 20px;
+  object-fit: cover;
+}
+*/
+/* Cards de Historia y Visión */
+.card-about {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .titulo-principal {
+    font-size: 36px;
+  }
+
+  .subtitulo-about {
+    font-size: 24px;
+  }
+
+  .parrafo-about {
+    font-size: 15px;
+  }
+
+  .card-about {
+    margin-bottom: 30px;
+  }
+}
+
+/* equipo */
+
+
+/* Título */
+.section-heading h6 {
+  color: #ff6f61;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Contenedor con borde de espuma */
+.espuma-container {
+  display: inline-block;
+  padding: 20px;
+  background-image: url('assets/images/espuma-equipo.png'); /* Ruta de tu imagen de espuma */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(118, 187, 233, 0.15);
+}
+
+/* Imagen bonita y centrada */
+.foto-bonita {
+  max-width: 100%; /* Asegura que la imagen sea flexible */
+  cursor: pointer; /* Cambia el cursor para indicar que la imagen es interactiva */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease-in-out; /* Transición suave para agrandar */
+}
+
+.foto-bonita:hover {
+  transform: scale(1.05); /* Efecto de agrandado cuando pasas el mouse */
+}
+
+/* Modal full-screen image */
+.full-screen-img {
+  width: 100vw; /* Hace que la imagen ocupe el 100% del ancho de la ventana */
+  height: 100vh; /* Hace que la imagen ocupe el 100% de la altura de la ventana */
+  object-fit: contain; /* Mantiene la relación de aspecto de la imagen */
+}
+
+/* Estilo para el modal */
+.modal-dialog {
+  max-width: 100%; /* Asegura que el modal ocupe el 100% del ancho */
+  margin: 0; /* Elimina márgenes */
+}
+
+.modal-content {
+  height: 100vh; /* Hace que el contenido del modal ocupe toda la altura de la ventana */
+  border: none; /* Elimina el borde del modal */
+  background: transparent; /* Fondo transparente */
+}
+
+
+
+/* Contenedor general */
+/* Formato para el h6 (Subtítulo) */
+.titulo-seccion h6 {
+  font-size: 18px; /* Ajusta el tamaño del subtítulo */
+  color: #370e80; /* Color morado suave */
+  font-weight: 600; /* Peso medio */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  text-transform: uppercase; /* Mayúsculas */
+  margin-bottom: 15px; /* Espacio debajo */
+  position: relative;
+}
+
+.titulo-seccion h6::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Coloca la línea justo debajo del texto */
+  width: 50px;
+  height: 2px;
+  background-color: #c084fc; /* Línea decorativa */
+  border-radius: 2px; /* Bordes redondeados */
+}
+
+/* Formato para el h1 (Título principal) - Ahora con la clase 'titulo-grande' */
+.titulo-grande {
+  font-size: 3.5rem; /* Ajuste de tamaño para que sea grande y llamativo */
+  font-weight: 800; /* Texto fuerte y destacado */
+  color: #1f2937; /* Gris oscuro para buena legibilidad */
+  line-height: 1.3; /* Espacio entre líneas */
+  letter-spacing: -0.5px; /* Ligero espaciado negativo */
+  margin-top: 0;
+  margin-bottom: 30px; /* Espacio debajo */
+  text-transform: capitalize; /* Primeras letras en mayúsculas */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+
+.pedido-btn {
+  display: inline-block;
+  background-color: #066b85;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.pedido-btn:hover {
+  background-color: #482188;
+  transform: scale(1.05);
+}
+ 
+

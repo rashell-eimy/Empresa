@@ -1,0 +1,54 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #fffafc;
+      padding: 40px;
+    }
+
+    .galeria {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .producto {
+      width: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      background: white;
+    }
+
+    .producto img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .precio {
+      position: absolute;
+      background: #002d72;
+      color: white;
+      padding: 6px 12px;
+      font-weight: bold;
+      top: 0;
+      left: 0;
+      border-bottom-right-radius: 10px;
+    }
+
+    .contenido {
+      padding: 15px;
+      background: #ff4f4f;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .contenido p {
+      margin: 5px 0 0;
+      font-weight: normal;
+    }
+
+    .tarjeta {
+      position: relative;
+    }

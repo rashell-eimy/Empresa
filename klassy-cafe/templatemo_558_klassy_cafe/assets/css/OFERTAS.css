@@ -1,0 +1,106 @@
+/* Fondo del sitio */
+.fondo1 {
+  background-color: #3D2217;
+  display: flex; /* Usa Flexbox para organizar los elementos */
+  flex-direction: column; /* Organiza los elementos en una columna */
+  justify-content: center; /* Centra los elementos verticalmente */
+}
+
+
+/* Estilos del encabezado */
+.encabezado {
+  position: static; /* Mantiene la posición estática del encabezado */
+  text-align: center; /* Centra el contenido del encabezado */
+  padding: 20px; /* Agrega espacio alrededor del contenido */
+}
+
+/* Estilos del título del encabezado */
+.clbdsp h1 {
+  font-size: 5em;
+  font-weight: bold;
+  margin-top: 80px; /* Espacio superior */
+  background: linear-gradient(45deg, hsl(9, 70%, 21%), white); /* Colores y dirección del degradado */
+  -webkit-background-clip: text; /* Recorta el fondo al tamaño del texto */
+  -webkit-text-fill-color: transparent; /* Hace que el texto sea transparente para que el fondo sea visible */
+  text-align: center;
+  margin-top: 98px; /* Espacio superior */
+
+}
+
+.clbdsp1 h1{
+  font-size: 2.1rem; /* Tamaño de fuente */
+  text-align: center;
+  font-family: fantasy;
+  color: brown;
+  margin-top: 30px; /* Espacio superior */
+  padding-bottom: 10px;
+  animation: escalado 1.5s infinite ease-in-out; /* Aplica la animación */
+}
+
+@keyframes escalado {
+  0% {
+    transform: scale(1); /* Tamaño inicial */
+  }
+  50% {
+    transform: scale(1.2); /* Tamaño aumentado al 120% */
+  }
+  100% {
+    transform: scale(1); /* Vuelve al tamaño inicial */
+  }
+}
+
+/* Ajuste de las secciones para que el título tenga color */
+.clbdsp h1 span {
+  color: rgb(122, 0, 61); /* Color destacado para el texto */
+}
+
+/* Desplazamiento horizontal de la galería */
+.desplazamiento {
+  display: flex; /* Usa Flexbox para la disposición */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+  justify-content: center; /* Centra los elementos */
+  gap: 20px; /* Espacio entre los elementos */
+  margin-top: -30px; /* Ajusta el margen superior */
+  padding: 20px; /* Espacio alrededor */
+}
+
+/* Estilos para cada item de la galería */
+.galeria {
+  width: 220px; /* Ancho fijo */
+  text-align: center; /* Centra las imágenes */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de las imágenes */
+  transition: transform 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto hover para las imágenes de la galería */
+.galeria:hover {
+  transform: scale(1.05); /* Agranda ligeramente las imágenes */
+}
+
+/* Ajuste de las imágenes dentro de la galería */
+.galeria img {
+  width: 100%; /* Ocupa todo el contenedor */
+  height: 250px; /* Altura fija */
+  object-fit: cover; /* Asegura que la imagen no se distorsione */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Información sobre el producto debajo de la imagen */
+.info {
+  padding: 15px; /* Espacio alrededor del texto */
+  text-align: center; /* Centra el texto */
+  background-color: #eae2ed; /* Color de fondo */
+  color: purple; /* Color del texto */
+  font-weight: bold; /* Hace el texto en negrita */
+  border-bottom-left-radius: 10px; /* Bordes redondeados en la parte inferior */
+  border-bottom-right-radius: 10px; /* Bordes redondeados en la parte inferior */
+  font-size: 1.1rem; /* Tamaño de fuente */
+}
+
+
+
+
+
+

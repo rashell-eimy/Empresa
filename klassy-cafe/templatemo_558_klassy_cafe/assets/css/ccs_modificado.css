@@ -1,0 +1,113 @@
+.elegante-banner {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro elegante */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.titulo-empresa {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #ecf0f1; /* Azul oscuro para un toque corporativo */
+    margin-bottom: 15px;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: 500;
+    color: #f39c12; /* Amarillo dorado para un toque de distinción */
+    margin-bottom: 20px;
+}
+
+.descripcion-banner {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ecf0f1;
+    margin-bottom: 25px;
+}
+
+
+
+
+/* Estilos para la sección "Sobre Nosotros" */
+#about {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Fondo suave */
+}
+
+/* Títulos y subtítulos */
+.about-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: blue; /* Dorado elegante */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about-title {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #004085; /* Azul oscuro */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-description {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Imágenes */
+.about-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Estilos para el video */
+.about-video .video-thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.about-video i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;
+    background-color: rgba(0, 123, 255, 0.7);
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.about-video i:hover {
+    background-color: rgba(0, 123, 255, 1); /* Azul más fuerte */
+}
+
+.about-video-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
